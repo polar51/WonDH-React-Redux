@@ -20,11 +20,11 @@ const Index = () => {
         <Grid container>
           <Grid item xs={12}>
             <Item>
-              <Inputs />
+              <Inputs text="이름" />
             </Item>
             <Grid item xs={12}>
               <Item>
-                <Inputs />
+                <Inputs text="아이디" />
               </Item>
             </Grid>
             <Grid item>

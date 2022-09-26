@@ -1,11 +1,11 @@
 import * as React from 'react';
-import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
+import { Box } from '@mui/material';
 
 export default function BasicButtons() {
   return (
-    <Stack spacing={2} direction="row">
-      <Button variant="outlined">제출하기</Button>
-    </Stack>
+    <Box>
+      <Button variant="contained">제출하기</Button>
+    </Box>
   );
 }

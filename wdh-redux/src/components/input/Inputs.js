@@ -4,7 +4,8 @@ import Input from '@mui/material/Input';
 
 const ariaLabel = { 'aria-label': 'description' };
 
-const Inputs = () => {
+const Inputs = text => {
+  const defaultValue = ...text
   return (
     <Box
       component="form"
@@ -14,7 +15,7 @@ const Inputs = () => {
       noValidate
       autoComplete="off"
     >
-      <Input defaultValue="Hello world" inputProps={ariaLabel} />
+      <Input defaultValue={defaultValue.} inputProps={ariaLabel} />
     </Box>
   );
 };
