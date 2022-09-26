@@ -4,7 +4,7 @@ import Input from '@mui/material/Input';
 
 const ariaLabel = { 'aria-label': 'description' };
 
-export default function Inputs() {
+const Inputs = () => {
   return (
     <Box
       component="form"
@@ -15,9 +15,8 @@ export default function Inputs() {
       autoComplete="off"
     >
       <Input defaultValue="Hello world" inputProps={ariaLabel} />
-      <Input placeholder="Placeholder" inputProps={ariaLabel} />
-      <Input disabled defaultValue="Disabled" inputProps={ariaLabel} />
-      <Input defaultValue="Error" error inputProps={ariaLabel} />
     </Box>
   );
-}
+};
+
+export default Inputs;
