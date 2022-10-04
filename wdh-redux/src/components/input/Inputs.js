@@ -2,8 +2,6 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import Input from '@mui/material/Input';
 
-const ariaLabel = { 'aria-label': 'description' };
-
 const Inputs = text => {
   const defaultValue = text;
   return (
@@ -15,7 +13,7 @@ const Inputs = text => {
       noValidate
       autoComplete="off"
     >
-      <Input placeholder={defaultValue.text} inputProps={ariaLabel} />
+      <Input placeholder={defaultValue.text} />
     </Box>
   );
 };

@@ -2,8 +2,8 @@ import React from 'react';
 import { styled } from '@mui/material/styles';
 import Paper from '@mui/material/Paper';
 import { Container, Grid } from '@mui/material';
-import Inputs from '../components/input/Inputs';
 import SubmitButton from '../components/buttons/SubmitButton';
+import Inputs from '../components/input/Inputs';
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -14,6 +14,8 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 
 const Index = () => {
+  // Input의 value 값 submit으로 넘겨주기
+  // redux action도 여기서 일어나야할듯
   return (
     <div>
       <Container>
