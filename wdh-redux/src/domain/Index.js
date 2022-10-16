@@ -20,10 +20,11 @@ const Index = () => {
   const [value, setValue] = useState({});
   const dispatch = useDispatch();
 
-  const getValues = inputValue => {
-    setValue(inputValue);
+  const getValues = e => {
+    setValue({
+      [e.target.name]: e.target.value,
+    });
   };
-
   const saveRedux = () => {
     dispatch(login(value));
   };
