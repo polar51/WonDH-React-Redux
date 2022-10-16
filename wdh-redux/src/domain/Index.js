@@ -22,6 +22,7 @@ const Index = () => {
 
   const getValues = e => {
     setValue({
+      ...value,
       [e.target.name]: e.target.value,
     });
   };
